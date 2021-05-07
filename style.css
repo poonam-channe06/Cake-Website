@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root{
+    --primary-color: #f78fb3;
+    --secondary-color:#e84393;
+    --dark-color:#c44569;
+    --transparent-color:#f78fb321;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* **********NAVBAR************* */
+
+.navbar{
+    background-color: var(--primary-color);
+    height: 70px;
+    padding-top: 15px;
+    color: #fff;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar a{
+    color: #fff;
+    padding: 0 20px;
+    margin: 0 5px;
+}
+
+.navbar a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+/* *******HOME PAGE******* */
+/* ***********SHOWCASE AREA*************** */
+.showcase{
+    height: 400px;
+    background: var(--primary-color);
+    color: #fff;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.showcase-text{
+    animation: slideInFromRight 1s ease-in;
+   
+}
+
+.showcase h1{
+    font-size: 40px;
+    padding-bottom: 10px;
+    
+}
+
+.showcase p{
+    line-height: 1.3;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.showcase img{
+    width: 350px;
+     height: 350px;
+    padding: 20px 0;
+    background-size: cover;
+    border: #f78fb3;
+}
+
+
+/* *******STATS******* */
+.stats{
+    background-color: var(--transparent-color);
+    padding-top: 30px; 
+    padding-bottom: 30px;
+    animation: slideInFromLeft 1s ease-in;
+   
+ }
+  
+.stats-heading{
+    max-width:500px ;
+    margin:auto;
+    padding-bottom: 20px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+.stats .grid-3 {
+    font-size: 21px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.stats .grid-3 p{
+   font-size: 18px;
+   padding: 15px;
+}
+
+
+/* **********CAKE-LOGO*********/
+.cake-logo .grid{
+    grid-template-columns: 3fr 4fr;
+}
+
+.cake-logo img{
+    height: 320px;
+    width: 320px;
+}
+
+
+.cake-logo h2{
+    color: var(--secondary-color);
+    font-size: 32px;
+    padding-bottom: 15px;
+}
+
+.cake-logo p{
+    color: var(--dark-color);
+    padding-bottom: 15px;
+    font-size: 17px;
+}
+
+
+
+.cake-logo .bttn:hover{
+  transform: scale(0.98);
+   
+}
+
+/* ****POSITION CLASS****** */
+
+.position{
+    height: 500px;
+    background-color: #ffcccc;
+    color: #fff;
+    padding: 20px 20px;
+}
+
+.position .grid{
+    overflow: visible;
+    grid-template-columns: 35% 66%;
+    gap: 40px;
+}
+
+.images-special{
+    position: relative; 
+    margin-bottom: 100px;
+}
+
+.position-image{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: relative;
+    
+} 
+
+.position .image1{
+    width: 400px;
+    position: absolute;
+    top: -70px;
+    left: 10px;
+    z-index: 1;
+    border-radius: 6px;
+
+  
+}
+
+.position .image2{
+    width: 400px;
+    position: absolute;
+    top: 70px;
+    left: -60px;
+    z-index: 5;
+    border-radius: 6px;
+
+   
+}
+
+.position .box{
+    width: 450px;
+    height: 300px;
+    border:#ffb8b8  1px solid;
+    padding: 20px 20px;
+    background-color: #ffb8b8;
+    border-radius: 8px;
+    margin-top:70px;
+}
+
+
+
+.position .box:hover{
+    transform: scale(0.98);
+}
+ 
+.position .box .position-text{
+    text-align: center;
+}
+
+.position h1{
+    font-size: 2.5rem;
+    padding-bottom: 15px;
+}
+
+.position p{
+    font-size: 1.2rem;
+    padding-top: 35px;
+}
+
+
+
+/* Special-head */
+
+.special-head{
+    height: 350px;
+    width: auto;
+    margin: auto;
+    background-color: #ffcccc15;
+    animation: slideInFromLeft 1s ease-in;
+}
+
+.special-head img{
+    width: 300px;
+    justify-self: flex-end;
+
+
+}
+
+.special-head .specialities{
+    padding-top: 30px;
+}
+
+.special-head h1{
+       font-size: 2.5rem;
+       padding-top: 30px;
+       padding-bottom: 20px;
+       color: var(--secondary-color);
+}
+
+.special-head p{
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+
+
+/* all types of cakes */
+.cakes .card{
+    text-align: center;
+    margin: 18px 10px 40px ;
+    background-color: #ffcccc3a;
+    animation: slideInFromRight 1s ease-in ;
+}
+
+
+.cakes .flex{
+    flex-wrap: wrap;
+}
+
+.cakes .card:hover{
+    transform: scale(1.1);
+}
+
+
+.cakes img{
+   height: 180px;
+   width: 180px;
+   
+}
+
+.cakes h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+
+.cakes .card h4{
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.cakes i{
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+
+
+
+/* special-sub-head */
+
+.special-sub-head{
+    height: 350px;
+    width: auto;
+    margin: auto;
+    background-color: #ffcccc07;
+    animation: slideInFromRight 1s ease-in;
+}
+
+.special-sub-head img{
+    width: 330px;
+    justify-self: flex-end;
+
+
+}
+
+.special-sub-head h1{
+    color: var(--dark-color);
+    padding-bottom: 30px;
+    font-size: 2rem;
+}
+
+.special-sub-head p{
+    color: var(--secondary-color);
+    line-height: 1.4;
+    font-size: 1.2rem;
+}
+
+/* Testimonials */
+
+.testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    
+}
+.testimonial-heading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-heading h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+}
+.testimonial-heading span{
+    font-size: 1.3rem;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.testimonial-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+    animation: slideInFromLeft 1s ease-in;
+}
+.testimonial-box{
+    width:500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews{
+    color:var(--dark-color);
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-comment p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+    color: rgba(51, 51, 51, 0.637);
+}
+.testimonial-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+ 
+
+/* footer */
+
+.footer{
+    background-color: var(--transparent-color);
+    height: 150px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: var(--dark-color);
+    align-items: center;
+}
+
+.footer ul li{
+    list-style: none;
+    line-height: 1.2;
+ 
+}
+
+.footer ul li a{
+    color: var(--dark-color);
+}
+
+.footer ul li a:hover{
+    border-bottom: 2px var(--dark-color) solid;
+}
+
+
+.footer .social a{
+     margin: 0 10px;
+     color: var(--dark-color);
+   
+}
+
+
+
+/* Animations */
+
+@keyframes slideInFromLeft{
+    0%{
+        transform:translateX(-100%)
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight{
+    0%{
+        transform:translateX(100%)
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop{
+    0%{
+        transform:translatey(-100%)
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromBottom{
+    0%{
+        transform:translateY(100%)
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+/* Media Queries */
+
+/* ************Tablets and under****************** */
+
+@media(max-width:768px){
+    .showcase .grid{
+      grid-template-columns: 1fr;
+      
+    }
+
+    .showcase img{
+       display: none;
+    }
+   .showcase-text{
+       padding-top: 50px;
+      padding-left: 60px;
+   }
+
+   .showcase-text p{
+       padding-bottom: 35px;
+   }
+
+   .position .images-special{
+       display: none;
+   }
+
+   .position .box{
+    width: 390px;
+    height: 300px;
+    padding-left: 20px;
+    margin-left: 130px;
+    
+}
+    .position-text p{
+       padding: 0px 25px 0 25px;
+      
+    }
+
+    .ckae-logo .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+   
+
+
+}
+
+/* ***************Mobile*************** */
+@media(max-width:500px)
+{   
+    /* Home Page */
+    .navbar{
+        height: 110px;
+      
+    }
+    .navbar .logo{
+        padding-bottom: 15px;
+    }
+    .navbar .flex{
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        padding: 10px;
+        background-color: #e8439362;
+    }
+
+
+    .showcase img{
+       display: none;
+    }
+
+    .showcase-text{
+        padding-top: 30px;
+    }
+    .showcase-text h1{
+        font-size: 2rem;
+    }
+    .showcase-text p{
+        font-size: 1.1rem;
+    }
+
+
+
+.stats .grid { 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    
+}
+
+    .imges-special{
+        display: none;
+    }
+
+    .cake-logo img{
+        display: none;
+    }
+    .cake-logo h2{
+        padding-top: 15px;
+        font-size: 1.8rem;
+    }
+
+    .cake-logo .grid{
+        grid-template-columns: 3fr ;
+    }
+
+    .cake-logo .text-center a{
+        margin-bottom: 15px;
+    }
+
+    .position .box{
+        width: 390px;
+        height: 300px;
+        padding-left: 20px;
+        margin-left: 10px;
+        
+    }
+    
+
+    .footer ul{
+        display: none;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .footer .fa-map-marker-alt,.fa-phone-alt {
+          display: none;
+    }
+
+
+    /* About-page */
+
+ .special-head .grid{
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr;
+ } 
+
+ .special-head .grid img{
+     display: none;
+ }
+ .special-head .specialities h1{
+       font-size: 2rem;
+ }
+ .special-head .specialities p{
+     font-size: 1.2rem;
+ }
+
+
+
+ /* classes */
+
+ .special-sub-head .grid{
+     grid-template-columns: 3fr;
+     grid-template-rows: 1fr;
+     
+ }
+
+.special-sub-head h1{
+    padding-top: 10px;
+    font-size: 2rem;
+    text-align: center;
+
+}
+.special-sub-head p{
+   font-size: 1.2rem;
+   text-align: center;
+   padding-bottom:15px;
+   line-height: 1.1;
+}
+
+ .special-sub-head  img{
+     width: auto;
+    height: 200px;
+    align-items: center;
+    margin-right: 100px;
+    padding-bottom: 40px;
+ } 
+ .testimonials .testimonial-heading span{
+     font-size: 1rem;
+     padding-top: 30px;
+ }
+
+ .testimonials .testimonial-heading h1{
+     font-size: 1.8rem;
+ }
+.testimonial-box-container .testimonial-box{
+    width:380px;
+}
+
+}
